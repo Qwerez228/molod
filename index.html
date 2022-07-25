@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Animations</title>
+	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="chiefslider.css">
+</head>
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+      const slider = new ChiefSlider('.slider', {
+        loop: true,
+        autoplay: true,
+        interval: 7000,
+      });
+    });
+  </script>
+  <style>
+    *,
+    *::before,
+    *::after {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
+        'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji',
+        'Segoe UI Symbol';
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .slider__wrapper {
+      overflow: hidden;
+    }
+
+    .slider__item {
+      flex: 0 0 33.33333%;
+      max-width: 33.33333%;
+      height: 150px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: rgba(255, 255, 255, 0.8);
+      font-size: 7rem;
+    }
+
+    .slider__item:nth-child(1) {
+	
+	background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    }
+
+    .slider__item:nth-child(2) {
+		background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    }
+
+    .slider__item:nth-child(3) {
+		background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    }
+
+    .slider__item:nth-child(4) {
+		background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    }
+
+    .slider__item:nth-child(5) {
+		background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    }
+
+	.slider__item:nth-child(6) {
+
+		background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    }
+
+	@media screen and (max-width: 1200px){
+		.slider__item {
+		flex: 0 0 100%;
+		max-width: 100%;
+	  }
+	  
+	}
+  </style>
+
+
+<body>
+	<svg class="circle-anim" viewBox="-10 -10 300 300">
+		<circle class="progress" r="140" cx="140" cy="140" fill="none" stroke="crimson" stroke-width="20"></circle>
+	</svg>
+	<div class="progress-line">
+		<div class="progress-line__item"></div>
+	</div>
+	<header class="header">
+		<div class="container header-container">
+			<a class="logo">Логотип</a>
+			<nav class="nav">
+				<ul class="nav__list">
+					<li class="nav__item"><a href="" class="nav__link">Главная</a></li>
+					<li class="nav__item"><a href="" class="nav__link">О нас</a></li>
+					<li class="nav__item"><a href="" class="nav__link">Новости</a></li>
+					<li class="nav__item"><a href="" class="nav__link">Контакты</a></li>
+				</ul>
+			</nav>
+		</div>
+	</header>
+	<main class="main">
+		<section class="hero">
+			<div class="container hero-container">
+				<div class="rightpers">
+					<div class="images"></div>
+					<div class="righttext">
+					<p style="margin: 0px;">Российское</p>
+					<p style="margin: 0px;">экологическое</p>
+					<p style="margin: 0px;">общество</p>
+				</div>
+				</div>
+				<div class="hero-text">
+					<h1 class="hero-title">Молодёжный совет</h1>
+					<p class="hero-descr">
+						Российского экологического общества
+					</p>
+					<div class="btnsctol">
+					<button class="yellowbtn" id="scroll_bottom"><a href="#" >ВСТУПИТЬ</a></button></div>
+				</div>
+			
+
+			</div>
+		</section>
+		
+		<section class="text">
+			<div class="container">
+				<h2 class="title">О Молодёжном совете</h2>
+				<p class="text-item scroll-item">Сегодня молодое поколение активно вовлекаются в эко-волонтерство. </p>
+				<p class="text-item scroll-item">Но, к сожалению, эта активность в основном ограничивается участием в акциях по уборке мусора и высадке деревьев. Вместе с тем, большое количество молодых эколого-ориентированных людей выражают желание и готовность принимать активное участие в реализации природоохранной политики через личную интеллектуальную вовлеченность. </p>
+				<p class="text-item scroll-item">Российское экологическое общество предоставляет молодому поколению возможности для самореализации в природоохранной политике России:</p>
+				<p class="text-item scroll-item">реализовать свои инициативы и проекты по обеспечению экологического благополучия, защиты окружающей среды своего края и страны в целом через интеллектуальную сопричастность   обеспечить компетентное сопровождение их деятельности в соответствующих областях общественной жизни. </p>
+			</div>
+		</section>
+		<section class="services">
+			
+				<h2 class="title">Новости</h2>
+				<ul class="services__list">
+					<li class="services__item scroll-item" id="m9" >
+						<img style="background: no-repeat; height: 60%; width: 100%;" src="crs/acess/news/0906222.jpeg" >
+					<div class="text_news">В Тамбовской области создали Координационный совет по экологии</div>	</li>
+					<li class="services__item scroll-item">
+						<img style="background: no-repeat; height: 60%; width: 100%;" src="crs/acess/news/080622.jpg" >
+						<div class="text_news">	«Чистые пруды России». В Москве стартовал проект Российского экологического общества</div></li>
+					<li class="services__item scroll-item">
+						<img style="background: no-repeat; height: 60%; width: 100%;" src="crs/acess/news/060622.jpeg" >
+						<div class="text_news">	Рашид Исмаилов выступил с лекцией на Красной площади</div></li>
+					<li class="services__item scroll-item" id="m10" >
+						<img style="background: no-repeat; height: 60%; width: 100%;" src="crs/acess/news/2804222.jpg" >
+						<div class="text_news">	Александр Якубовский возглавил Иркутское региональное отделение Российского экологического общества</div></li>
+				</ul>
+		
+		</section>
+		<section class="servicess">
+			<div class="elemback"></div>
+			<div class="container" >
+				<h1 class="title" style="color: white;">О НАС</h1>
+				<h2 class="title" style="color: white;" >Общероссийская общественная организация по охране и защите природных ресурсов «Российское экологическое общество» — это национальное объединение и широкая коалиция участников «Зеленой экосистемы»: экологически ответственного бизнеса и органов государственной власти федерального и регионального уровня, эколидеров и граждан.</h2>
+
+			</div>
+		</section>
+
+		<section class="news">
+
+	
+
+				<div class="slider" >
+					<h2 class="title">Потенциальные партнеры</h2>
+					
+				  <div class="slider__wrapper">
+					<div class="slider__items">
+					  <div class="slider__item">
+						<img style="height: 100%;" src="crs/acess/partner/mprie_ru.png">
+						<!-- Контент 1 слайда -->
+						
+					  </div>
+					  <div class="slider__item">
+						<img style="height: 85%;" src="crs/acess/partner/nauka.jpg">
+						<!-- Контент 2 слайда -->
+						
+					  </div>
+					  <div class="slider__item">
+						<img style="height: 100%;" src="crs/acess/partner/prosve.png">
+						<!-- Контент 3 слайда -->
+						
+					  </div>
+					  <div class="slider__item">
+						<img style="height: 100%;" src="crs/acess/partner/prior.png">
+						<!-- Контент 4 слайда -->
+						
+					  </div>
+					  <div class="slider__item">
+						<img style="height: 60%;" src="crs/acess/partner/molod.png">
+						<!-- Контент 5 слайда -->
+						
+					  </div>
+					  <div class="slider__item">
+						<img style="height: 80%;" src="crs/acess/partner/ecop.png">
+						<!-- Контент 5 слайда -->
+						
+					  </div>
+					</div>
+				  </div>
+				  <a href="#" class="slider__control" data-slide="prev"></a>
+				  <a href="#" class="slider__control" data-slide="next"></a>
+				
+				</div>
+			
+		
+			  </section>
+		
+		<section class="contacts">
+			<div class="container">
+				<h2 class="title">Контакты</h2>
+				<div class="contacts__content">
+					<!-- <div class="contacts__left contacts__item scroll-item">
+						<form action="" class="form">
+							<input type="text" placeholder="Имя">
+							<input type="tel" placeholder="Телефон">
+							<button>Отправить</button>
+						</form>
+					</div> -->
+					<div class="contacts__right contacts__item scroll-item">
+						<a href="https://t.me/green2018" class="phone">  t.me/green2018 <img class="imgico" src="crs/acess/icon/telegram-32.png"></a>
+						<a href="https://www.ecosociety.ru/" class="phone">  ecosociety.ru <img class="imgico" src="crs/acess/icon/geography-32.png"></a>
+						<a href="mailto://molodezhka@ecosociety.ru " class="phone"> molodezhka@ecosociety.ru <img class="imgico" src="crs/acess/icon/mail-32.png"></a>
+					</div>
+				</div>
+			</div>
+		</section>
+	</main>
+	<footer class="footer">
+		<div class="container">
+			<small class="rights">
+				Все права защищены
+			</small>
+		</div>
+	</footer>
+	<script src="script.js"></script>
+	<script src="chiefslider.js"></script>
+	<script src="https://snipp.ru/cdn/jquery/2.1.1/jquery.min.js"></script>
+	<script>$(function(){
+		$('#scroll_bottom').click(function(){
+			$('html, body').animate({scrollTop: $(document).height() - $(window).height()}, 600);
+			return false;
+		});
+	});</script>
+	
+</body>
+</html>
